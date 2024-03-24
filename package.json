@@ -50,7 +50,7 @@
     "start:dev": "cross-env NODE_ENV=development npm run build && node dist/src/main.js",
     "start:prod": "node dist/src/main.js",
     "test": "echo \"No test specified, please create tests.\" && exit 0",
-    "build": "tsc",
+    "build": "tsc build --output public",
     "fmt": "prettier --write .",
     "prettier:check": "prettier --check .",
     "prepare": "husky install"
